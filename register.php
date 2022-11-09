@@ -56,10 +56,50 @@ if (isset($_POST['submit'])) {
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
 
+  <style>
+    body{
+      margin-top: 50px;
+    }
+    .register-btn{
+      padding: 8px 20px;
+      font-size: 15px;
+      background-color: #337ab7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .register-btn:hover{
+      background-color:#4f86b6;
+    }
+
+    .panel{
+      border: 1px solid black;
+    }
+
+    .panel-heading{
+      border-bottom: 1px solid black;
+      background-color: #337ab7;
+      color: white;
+      text-align: center;
+    }
+
+		.login:link{
+      text-decoration: none;
+			margin-left: 6px;
+			font-size: 16px;
+    }
+    
+    .login:hover{
+      color: rgb(27, 194, 194);
+    }
+  </style>
+
 <body>
 	<div class="container">
 		<div class="row col-md-6 col-md-offset-3">
-			<div class="panel panel-primary">
+			<div class="panel">
 				<div class="panel-heading">
 					<h1>Registration Form</h1>
 				</div>
@@ -69,7 +109,7 @@ if (isset($_POST['submit'])) {
 							<div class="col-md-6 mb-4">
 								<div class="form-group">
 									<label class="form-label" for="eid">Employee ID</label>
-									<input type="text" class="form-control" name="empid" id="eid" placeholder="E123" required />
+									<input type="text" class="form-control" name="empid" id="eid" placeholder="EID1" required />
 								</div>
 							</div>
 							<div class="col-md-6 mb-4">
@@ -101,7 +141,7 @@ if (isset($_POST['submit'])) {
 							<div class="col-md-6 mb-4">
 								<div class="form-group">
 									<label for="sal" class="form-label">Salary</label>
-									<input type="number" class="form-control" id="sal" name="salary" placeholder="25000" required />
+									<input type="number" class="form-control" id="sal" name="salary" placeholder="30000" required />
 								</div>
 							</div>
 						</div>
@@ -115,7 +155,7 @@ if (isset($_POST['submit'])) {
 							<div class="col-md-6 mb-4">
 								<div class="form-group">
 									<label for="phno" class="form-label">Mobile Number</label>
-									<input type="tel" class="form-control" id="phno" name="phno" placeholder="8274201282" required />
+									<input type="tel" class="form-control" id="phno" name="phno" placeholder="9086538055" required />
 								</div>
 							</div>
 						</div>
@@ -129,8 +169,8 @@ if (isset($_POST['submit'])) {
 						</div>
 						<div class="row">
 							<div style="align-items: center;padding-left: 3%;">
-								<button type="submit" name="submit" class="btn btn-default">Register</button>
-								Already a user? <a href="index.php">Login</a>
+								<button type="submit" name="submit" class="register-btn">Register</button>
+								Already a user? <a class="login" href="index.php">Login</a>
 							</div>
 						</div>
 					</form>
