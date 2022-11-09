@@ -30,6 +30,20 @@ $doj = $row["DoJ"];
 	<title>Profile</title>
 </head>
 
+<style>
+  .link:link{
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .link:hover{
+    color: rgb(18, 154, 154);
+  }
+</style>
+
 <body>
 	<h3> <?php echo "Welcome " . $name; ?> </h3>
 	<h3>Profile Details</h3>
@@ -60,8 +74,8 @@ $doj = $row["DoJ"];
 		</tr>
 	</table>
 	<br />
-	<a href="update.php"> Update email/mobile </a><br />
-	<a href="index.php"> Log out </a>
+	<a class="link" href="update.php"> Update Email/Mobile </a><br />
+	<a class="link" href="index.php"> Log out </a>
 </body>
 
 </html>
